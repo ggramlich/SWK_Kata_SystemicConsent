@@ -1,0 +1,23 @@
+{
+  "name": "SWK_Kata_SystemicConsent",
+  "version": "0.0.0",
+  "description": "SWK Kata Systemic",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NoMe01/SWK_Kata_SystemicConsent.git"
+  },
+  "author": "Norman, Frank, Pascal, Gregor",
+  "license": "none",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "coffee-script": "~1.6.2",
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.2"
+  }
+}
