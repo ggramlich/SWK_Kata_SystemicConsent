@@ -1,11 +1,5 @@
 (require 'chai').should()
-
-class Client
-    list = []
-
-    addOption: (option) -> list.push option
-    getList: -> list
-
+Client = require '../lib/client'
 
 describe 'The moderator client', ->
     client = null
