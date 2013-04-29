@@ -1,7 +1,7 @@
-class Client
+class OptionStore
     list = []
 
     addOption: (option) -> list.push option
     getList: -> list
 
-module.exports = Client
+module.exports = OptionStore
