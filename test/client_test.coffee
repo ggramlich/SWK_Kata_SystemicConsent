@@ -1,14 +1,14 @@
 (require 'chai').should()
-Client = require '../lib/client'
+OptionStore = require '../lib/optionStore'
 
-describe 'The moderator client', ->
-    client = null
+describe 'The moderator optionStore', ->
+    optionStore = null
     
     beforeEach ->
-        client = new Client
+        optionStore = new OptionStore
         
     
     it 'should accept an option that is added to its list', ->
-        client.addOption 'option'
-        options = client.getList()
+        optionStore.addOption 'option'
+        options = optionStore.getList()
         options.should.contain 'option'
