@@ -1,9 +1,17 @@
 http = require 'http'
+path = require 'path'
 
 
 handler = (req, res) ->
-  res.writeHead(200, { 'content-type': 'text/html'})
-  res.end '<html><head><script src="consent.js" type="text/javascript"></script></head><body></body></html>'
+  switch req.url
+    when "/"
+      res.writeHead(200, { 'content-type': 'text/html'})
+      res.end '<html><head><script src="consent.js" type="text/javascript"></script></head><body></body></html>'
+      break;
+    when "/consent.js"
+      res.writeHead(200, { 'content-type': 'text/javascript'})
+      res.end 'hello world'
+      break;
 
 
 
