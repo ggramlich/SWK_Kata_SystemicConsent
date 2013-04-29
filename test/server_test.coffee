@@ -22,3 +22,10 @@ describe 'the server', ->
       done()
     )
 
+  it 'should deliver the consent.js script', (done) ->
+    request(uri: 'http://localhost:4000/consent.js', (req, res) ->
+      should.exist(res)
+      res.statusCode.should.equal(200)
+      res.headers['content-type'].should.contain('text/javascript')
+      done()
+    )
